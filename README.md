@@ -1,50 +1,128 @@
-# React + TypeScript + Vite
+# 🌐 Portfólio Pessoal - Matheus Henrique
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portfolio](https://img.shields.io/badge/Portfolio-v1.0-blue)
+![React](https://img.shields.io/badge/React-v18.2.0-%2361DAFB)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-v3.3.0-%2338B2AC)
+![TypeScript](https://img.shields.io/badge/TypeScript-v5.1.3-%233178C6)
+![License](https://img.shields.io/badge/Licen%C3%A7a-MIT-green)
 
-Currently, two official plugins are available:
+Bem-vindo ao repositório do meu site de portfólio pessoal! Este projeto exibe minhas habilidades, experiência e projetos como desenvolvedor front-end.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Funcionalidades
 
-## Expanding the ESLint configuration
+- **Alternância de Tema Claro/Escuro**: Altere dinamicamente entre os temas claro e escuro.
+- **Design Responsivo**: Design totalmente responsivo, otimizado para dispositivos desktop e mobile.
+- **Carregamento Preguiçoso de Imagens**: Usa lazy loading para melhorar o desempenho.
+- **Animações Suaves**: Animações de hover e clique para uma experiência interativa.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🖼️ Pré-visualização
 
-- Configure the top-level `parserOptions` property like this:
+![Pré-visualização do Portfólio](https://user-images.githubusercontent.com/90286224/portfolio-preview.gif)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🛠️ Tecnologias Utilizadas
+
+- **React**: Uma biblioteca JavaScript para criar interfaces de usuário.
+- **TypeScript**: Um superset do JavaScript que adiciona tipagem estática.
+- **Tailwind CSS**: Um framework CSS utility-first para desenvolvimento rápido de UI.
+- **Lucide Icons**: Uma coleção de ícones open-source para usar em seus projetos React.
+- **react-lazy-load-image-component**: Uma biblioteca para carregamento preguiçoso de imagens em aplicações React.
+
+## 📄 Instalação
+
+Siga estas etapas para obter uma cópia local em execução:
+
+### Pré-requisitos
+
+Certifique-se de ter o seguinte instalado:
+
+- [Node.js](https://nodejs.org/) (v14 ou superior)
+- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
+
+### Clonar o repositório
+
+```bash
+git clone https://github.com/mat-henriqu/link-tree.git
+cd link-tree
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Instalar as dependências
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Usando npm:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm install
 ```
+
+Ou usando yarn:
+
+```bash
+yarn install
+```
+
+### Iniciar o servidor de desenvolvimento
+
+```bash
+npm run dev
+```
+
+Ou usando yarn:
+
+```bash
+yarn dev
+```
+
+O seu portfólio estará disponível em `http://localhost:3000`.
+
+## 🎨 Personalização
+
+Você pode personalizar facilmente o conteúdo, cores e layout editando os componentes no diretório `src`.
+
+### Alterar a Imagem de Perfil
+
+Substitua a URL da imagem no arquivo `src/App.tsx`:
+
+```tsx
+<LazyLoadImage
+  src="https://avatars.githubusercontent.com/u/90286224?v=4"
+  ...
+/>
+```
+
+### Atualizar Links Sociais
+
+Atualize os links sociais no mesmo arquivo `src/App.tsx`:
+
+```tsx
+<a href="https://github.com/mat-henriqu" target="_blank">
+  <Github />
+  GitHub
+</a>
+```
+
+## 📚 Uso
+
+Este portfólio inclui seções para:
+
+- **Visão Geral do Perfil**: Introduz quem você é.
+- **Projetos**: Mostra alguns dos trabalhos que você fez.
+- **Contato**: Fornece links para seus perfis nas redes sociais.
+
+Sinta-se à vontade para expandir essas seções com mais conteúdo ou adicionar novas conforme necessário.
+
+## 🤝 Contribuindo
+
+Contribuições, issues e pedidos de funcionalidades são bem-vindos!
+
+Sinta-se à vontade para verificar a [página de issues](https://github.com/mat-henriqu/link-tree/issues).
+
+## 📄 Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+
+## 🧑‍💻 Autor
+
+- **Matheus Henrique** - [LinkedIn](https://www.linkedin.com/in/mat-henriqu/) | [GitHub](https://github.com/mat-henriqu)
+
+---
+
+Aproveite o código e sinta-se à vontade para entrar em contato se tiver alguma dúvida! 😄
