@@ -17,7 +17,7 @@ Bem-vindo ao repositório do meu site de portfólio pessoal! Este projeto exibe 
 
 ## 🖼️ Pré-visualização
 
-![Pré-visualização do Portfólio](https://user-images.githubusercontent.com/90286224/portfolio-preview.gif)
+![Pré-visualização do Portfólio](https://mat-henriqu.github.io/link-tree/)
 
 ## 🛠️ Tecnologias Utilizadas
 
